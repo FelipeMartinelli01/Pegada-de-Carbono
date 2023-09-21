@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Pegada de Carbono</title>
+    <link rel="shortcut icon" href="img/Logo.jpeg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+        document.querySelector("#btnCalc").addEventListener("click", () => {
+
+
+
+
+
+            document.querySelector("#resultado").scrollIntoView();
+
+
+        })
+
+    })
+</script>
+
+<body>
+    <nav>
+        <img src="img/Logo2.jpeg">
+    </nav>
+    <header>
+        <div class="container">
+            <ul>
+                <li>
+                    Nosso objetivo é neutralizar e reduzir as emissões de gases de efeito estufa, combatendo as mudanças
+                    climáticas e protegendo nosso precioso planeta. Por meio de estratégias inovadoras, como a
+                    implementação
+                    de energias renováveis, eficiência energética e compensação de carbono, iremos trabalhar
+                    incansavelmente
+                    para alcançar um equilíbrio ambiental. Juntos, podemos fazer a diferença e criar um mundo mais limpo
+                    e
+                    saudável para as gerações presentes e futuras. Sejam todos bem-vindos a essa incrível jornada em
+                    prol de
+                    um futuro de carbono zero!
+                </li>
+                <li>
+                    Atualmente o alto volume de carros e motos que transitam pela faculdade gera um transtorno
+                    exorbitante,
+                    tanto para alunos, quanto para funcionários/professores da faculdade.Contudo, um problema que passa
+                    despercebido por muitos, é a alta produção de carbono, gerada por este tráfego.
+                </li>
+                <li>
+                    Para disponibilizar aos alunos e a faculdade uma forma de agir contra esta poluição, como objetivo
+                    principal, e em segundo objetivo agradecer os formandos pela graduação, além de homenageá-los pelo
+                    campus. Desenvolvemos um site com possibilidade de cada turma escolher um broto de uma espécie
+                    nativa e
+                    protegida por lei, com o intuito de ser semeada dentro do campus.
+                </li>
+                <li>
+                    Isso ajudará a reduzir a produção de carbono gerada pelo trânsito, por meio da captura do carbono
+                    (realizada pelo, inicialmente pelo broto da árvore) e utilizando este recurso para crescimento e
+                    produção do oxigênio.
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- storytelling -->
+
+    <main>
+        <section class="calculator">
+            <h1>Calcule sua Pegada de Carbono</h1>
+            <h3>Preencha as informações abaixo:</h3>
+            <br>
+            <form>
+                <label for="energy">Quantas pessoas moram com você:</label>
+                <select id="moradia" name="pessoas" required>
+                    <option value="1">Moro sozinho</option>
+                    <option value="2">Moro com duas pessoas</option>
+                    <option value="3">Moro com tres pessoas</option>
+                    <option value="4">Moro com quatro pessoas</option>
+                    <option value="5">Moro com cinco pessoas</option>
+                    <option value="6">Moro com seis pessoas</option>
+                    <option value="7">Moro com sete pessoas</option>
+                    <option value="8">Moro com oito pessoas</option>
+                    <option value="9">Moro com nove pessoas</option>
+                    <option value="10">Moro com dez pessoas</option>
+                </select>
+
+                <label for="energy">Total de energia consumida mensalmente em sua casa:</label>
+                <select id="energiacasa" name="energiacasa" required>
+                    <option value="0" selected></option>
+                    <option value="150">150kWh</option>
+                    <option value="250">250kWh</option>
+                    <option value="350">350kWh</option>
+                    <option value="450">450kWh</option>
+                    <option value="550">550kWh</option>
+                </select>
+
+                <label for="energy">Consumo de carne bovina mensal:</label>
+                <select  id="carne" name="consumocarne" required>
+                    <option value="0" selected>Não como carne</option>
+                    <option value="2">1 a 3kg</option>
+                    <option value="4">3 a 5kg</option>
+                    <option value="6">5 a 7kg</option>
+                    <option value="8">7 a 9kg</option>
+                </select>
+
+                <label for="energy">Quantos quilometros você percorre com seu veiculo mensalmente:</label>
+                <select  id="km-pordia" name="km" required>
+                    <option value="0" selected>Não tenho veiculo</option>
+                    <option value="45">30 a 60km</option>
+                    <option value="60">60 a 90km</option>
+                    <option value="105">90 a 120km</option>
+                    <option value="160">120 a 200km</option>
+                    <option value="225">200 a 250km</option>
+                    <option value="300">300+km</option>
+                </select>
+
+                <label for="estiloVida">Consumo de combustivel por litro do veiculo:</label>
+                <select id="estiloVida" name="estiloVida" required>
+                    <option value="0" selected>Não tenho veiculo</option>
+                    <option value="3">2 a 4</option>
+                    <option value="4">3 a 5</option>
+                    <option value="8">5 a 11</option>
+                    <option value="14">11 a 17</option>
+                </select>
+            </form>
+            <div class="'vertical-center">
+                <button type="button" id="btnCalc">Calcular</button>
+            </div>
+            <div id="resultado"></div>
+            <!--Redes sociais-->
+            <div class="redes-sociais">
+                <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" id="facebook">
+                    <img src="img/facebook.png">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" id="instagram">
+                    <img src="img/instagram.png">
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; Projeto carbono zero 2023</p>
+        </div>
+    </footer>
+</body>
+
+</html>

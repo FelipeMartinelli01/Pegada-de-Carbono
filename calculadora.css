@@ -1,0 +1,248 @@
+/*borda do top*/
+nav img {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    border: -10px;
+    display: flex;
+    justify-content: center;
+}
+nav{
+    background-color: #38aa8e;
+}
+/*margin de todo body*/
+body,
+h1,
+p,
+label,
+input,
+select {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: "Cutive Mono", monospace;
+}
+
+/*introdução do story*/
+.container h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 28px;
+}
+
+/*storytelling*/
+.container ul {
+    display: inline-block;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.6;
+    animation: roll-up 2s linear 1;
+    /* Execute a animação uma vez (1 vez) */
+}
+
+/*Header top*/
+header .container{
+    background: rgba(0, 0, 0, 0.7);
+}
+.container ul li{
+    list-style: none;
+    font-weight: bold;
+}
+
+/*fonte e backgraund do body*/
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(82, 126, 99);
+    background: linear-gradient(0deg, rgba(82, 126, 99, 1) 0%, rgba(55, 139, 186, 1) 100%);
+}
+
+header {
+    background: url(img/img11.jpeg) no-repeat right top fixed;
+    background-position: center top;
+    background-size: 100%;
+    text-align: center;
+    padding: 90px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}   
+
+/*caixa da calculadora*/
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+/*Calculadora*/
+.calculator {
+    background-color: #656464;
+    border-radius: 5px;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+    /* Adicione esta linha para criar um contexto de empilhamento */
+    z-index: 1;
+    /* Aumente o valor do z-index para ficar acima dos elementos apropriados */
+}
+
+.calculator h1,
+h3,
+label {
+    color: #FFFFFF;
+}
+
+/*ajustes espaço da calculadora*/
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/*barras da calculadora*/
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/*efeito botao calcular*/
+button {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    background: #270e52;
+    transition: 0.1s;
+}
+
+button::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+button:active {
+    transform: scale(0.9) rotate(3deg);
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(15, 160, 189) 17.8%, rgb(16, 155, 205) 100.1%);
+    transform: 0.5%;
+}
+
+.background {
+    background-color: #fff;
+    width: 75%;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgb(23, 21, 21);
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 35px;
+    overflow: hidden;
+    /* Para esconder o conteúdo que estiver fora do contêiner */
+}
+
+/*efeito do Story*/
+@keyframes roll-up {
+    0% {
+        transform: translateY(100%);
+        /* Comece fora do contêiner (100% para baixo) */
+    }
+
+    100% {
+        transform: translateY(0%);
+        /* Termine dentro do contêiner (0% para cima) */
+    }
+}
+
+/*roda pé*/
+footer {
+    background-color: #333;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/*Rede Sociais*/
+section .redes-sociais img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+}
+
+section .redes-sociais a {
+    text-decoration: none;
+    margin: 20px;
+    text-align: center;
+    color: black;
+}
+
+section .redes-sociais a:hover {
+    color: #fff;
+    text-shadow: 5px 5px 5px #fff;
+}
+
+.redes-sociais img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+    margin: 20px;
+    text-align: center;
+    color: black;
+}
+
+.redes-sociais a:hover {
+    color: #fff;
+    text-shadow: 5px 5px 5px #fff;
+}
+
+#facebook:hover {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+#instagram:hover {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
